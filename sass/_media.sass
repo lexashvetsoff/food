@@ -1,0 +1,163 @@
+@media ( max-width: 768px )
+    .container
+        width: 95%
+    .about
+        &-item
+            &__image
+                width: 45%
+    .content
+        width: 54%
+@media ( max-width: 576px )
+    .header
+        padding-top: 30px
+        &-navbar
+            display: flex
+            justify-content: flex-end
+            top: 0
+            left: 0
+            width: 100%
+            height: 30px
+            margin-bottom: 60px
+            z-index: 3
+    .navbar
+        &-burger
+            display: block
+            position: relative
+            width: 30px
+            height: 20px
+            margin-top: 10px
+            margin-right: 10px
+            cursor: pointer
+            z-index: 3
+            &::before
+                content: ''
+                background-color: $color-light
+                position: absolute
+                width: 100%
+                height: 2px
+                top: 0
+                left: 0
+                transition: all 0.5s ease 0s
+            &::after
+                content: ''
+                background-color: $color-light
+                position: absolute
+                width: 100%
+                height: 2px
+                left: 0
+                bottom: 0
+                transition: all 0.5s ease 0s
+            &__item
+                position: absolute
+                background-color: $color-light
+                top: 9px
+                left: 0
+                width: 100%
+                height: 2px
+                transition: all 0.5s ease 0s
+                &--activ
+                    display: none
+            &--activ
+                &::before
+                    transform: rotate(45deg)
+                    top: 9px
+                    background-color: $color-dark
+                &::after
+                    transform: rotate(-45deg)
+                    bottom: 9px
+                    background-color: $color-dark
+        &-menu
+            display: none
+    .mobile
+        &--activ
+            top: 20px
+    .about
+        &-item
+            &__image
+                display: none
+    .content
+        width: 100%
+    .success
+        &-wrapper
+            flex-direction: column
+        &-item
+            width: 100%
+            flex-direction: row
+            justify-content: space-around
+    .best
+        &-grid
+            grid-template-rows: repeat(17, 5vw)
+    .item
+        &--1
+            grid-column-start: 1
+            grid-column-end: 7
+            grid-row-start: 1
+            grid-row-end: 3
+        &--2
+            grid-column-start: 7
+            grid-column-end: 14
+            grid-row-start: 1
+            grid-row-end: 4
+        &--3
+            grid-column-start: 11
+            grid-column-end: 14
+            grid-row-start: 14
+            grid-row-end: 17
+        &--4
+            grid-column-start: 1
+            grid-column-end: 6
+            grid-row-start: 12
+            grid-row-end: 17
+        &--5
+            grid-column-start: 1
+            grid-column-end: 7
+            grid-row-start: 3
+            grid-row-end: 7
+        &--6
+            grid-column-start: 7
+            grid-column-end: 11
+            grid-row-start: 4
+            grid-row-end: 7
+        &--7
+            grid-column-start: 11
+            grid-column-end: 14
+            grid-row-start: 4
+            grid-row-end: 7
+        &--8
+            grid-column-start: 1
+            grid-column-end: 6
+            grid-row-start: 7
+            grid-row-end: 12
+        &--9
+            grid-column-start: 6
+            grid-column-end: 11
+            grid-row-start: 7
+            grid-row-end: 12
+        &--10
+            grid-column-start: 11
+            grid-column-end: 14
+            grid-row-start: 7
+            grid-row-end: 11
+        &--11
+            grid-column-start: 6
+            grid-column-end: 11
+            grid-row-start: 12
+            grid-row-end: 18
+        &--12
+            grid-column-start: 11
+            grid-column-end: 14
+            grid-row-start: 11
+            grid-row-end: 14
+    .footer
+        &-block
+            width: 100%
+            border: none
+        &-form
+            width: 95%
+@media ( max-width: 320px )
+    .header
+        &-title
+            &__title
+                &::after
+                    left: 50%
+                    transform: translateX(-55%)

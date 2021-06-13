@@ -1,0 +1,62 @@
+.footer
+    padding-top: 248px
+    padding-bottom: 248px
+    background: url('../image/footer/footer.png') center
+    background-size: cover
+    &-block
+        position: relative
+        width: 509px
+        height: 446px
+        margin: auto
+        border: 2px solid $color-light
+        border-radius: 7px
+    &__title
+        margin-top: 51px
+        margin-bottom: 20px
+        text-align: center
+        font-style: normal
+        font-weight: 800
+        font-size: 30px
+        line-height: 37px
+        letter-spacing: 0.035em
+        text-transform: uppercase
+        color: $color-light
+    &-form
+        position: absolute
+        top: 140px
+        left: 50%
+        transform: translateX(-50%)
+        width: 405px
+        margin: auto
+        &__input
+            width: 100%
+            margin-bottom: 37px
+            background-color: $color-secondary
+            border: none
+            border-bottom: 2px solid $color-light
+            padding-left: 10px
+            font-style: normal
+            font-weight: 500
+            font-size: 18px
+            line-height: 136.9%
+            letter-spacing: 0.01em
+            color: $color-light
+            &::placeholder
+                color: $color-light
+        &__button
+            width: 100%
+            padding-top: 20px
+            padding-bottom: 20px
+            font-style: normal
+            font-weight: 800
+            font-size: 25px
+            line-height: 30px
+            letter-spacing: 0.035em
+            text-transform: uppercase
+            color: $color-success
+            background-color: $color-light
+            border: none
+            border-radius: 7px
+            cursor: pointer
+            &:hover
+                background-color: $color-primary
